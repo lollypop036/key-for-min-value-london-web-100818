@@ -15,7 +15,7 @@ def key_for_min_value(name_hash)
    
     if num < y
     
-      #x = item
+      x = item
       y = num
       
     elsif num == y
