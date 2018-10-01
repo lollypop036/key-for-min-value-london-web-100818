@@ -17,11 +17,10 @@ y = y[0]
     
   x = item
  y = num
-else
-y = y
+elsif num == y
+x = item
 end
 
-x = item
 end
 
 end
