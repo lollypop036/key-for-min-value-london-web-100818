@@ -3,25 +3,27 @@
 
 def key_for_min_value(name_hash)
   
- if name_hash.size == 0
-  x = nil
+  if name_hash.size == 0
+    x = nil
+ 
  else
    
+    y = name_hash.map {|item,num| num}
+    y = y[0]
 
-y = name_hash.map {|item,num| num}
-y = y[0]
-
- name_hash.each do |item, num|
+    name_hash.each do |item, num|
    
-  if num < y
+    if num < y
     
-  x = item
- y = num
-elsif num == y
-x = item
-end
+      #x = item
+      y = num
+      
+    elsif num == y
+    x = item
+    
+    end
 
-end
+  end
 
 end
 x
